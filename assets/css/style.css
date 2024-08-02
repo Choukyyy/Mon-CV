@@ -6,12 +6,22 @@
     src: url('../font/Raleway-Regular.ttf') format('truetype');
 }
 
-*{
-    border: 1px solid blue;
-    max-width: 1160px;
-    margin: auto;
-    padding: 5px;
-    }
+body {
+    font-family: "Raleway";
+    width: 1160px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    border: 1px solid;
+    border-bottom: 0;
+    border-left: 0;
+    border-top: 0;
+    max-height: 1160px;
+}
 
 header section {
     font-family: "lato", sans-serif;
@@ -21,14 +31,10 @@ header section {
 }
 
 header img {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 180px;
-    height: 200px;
-    border-radius: 200px;
-    box-shadow: 200px #2c1d27;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px black;
     cursor: zoom-in;
 }
 
@@ -44,12 +50,11 @@ header img {
 .à_propos {
     background-color: #782221;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    text-align: left;
-    display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: 570px;
-    float: left;
+    width: 26%;
+    height: 1160px;
+    color: white;    
 }
 
 .à_propos p {
@@ -62,34 +67,37 @@ header img {
 }
 
 .expériences {
-    border-right: 3px solid #2c1d27;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    float: center;
-    position: static ;
+    justify-content: space-between;
+    position: relative ;
+    bottom: 1160px;
+    left: 30%;
+    max-width: 70%;
 }
 
-.Diplômes {
-    border-right: 3px solid #2c1d27;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    float: center;
+.Diplômes { 
+    position: relative ;
+    bottom: 1180px;
+    left: 30%;
+    max-width: 70%;
 }
 
 .Compétences {
-    border-right: 3px solid #2c1d27;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    float: center;
+    justify-content: space-between;
+    position: relative ;
+    bottom: 1190px;
+    left: 30%;
+    max-width: 70%;
+}
+
+.expériences:hover, .Diplômes:hover, .Compétences:hover {
+    border: 5px solid #782221;
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 0;
 }
 
 footer  {
@@ -103,17 +111,17 @@ footer  {
 footer img {
     display: flex;
     align-items: center;
-    max-width: 40px;
-    max-height: 40px;
-    border: 1px solid #782221;
+    max-width: 35px;
+    max-height: 35px;
+    margin-bottom: 10px;
 }
+
 
 small {
     background-color: #782221;
     color: #dbc2a4 ;
     display: flex;
-    flex-wrap: wrap;
-    align-content: center;
+    flex-direction: column;
     align-items: center;
 } 
 
