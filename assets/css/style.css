@@ -116,6 +116,9 @@ footer img {
     margin-bottom: 10px;
 }
 
+footer img:hover {
+    opacity: 0.5;
+}
 
 small {
     background-color: #782221;
@@ -126,16 +129,16 @@ small {
 } 
 
 p  {
-    font-family: "Raleway-Regular", sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
 li {
-    font-family: "Raleway-Regular", sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
 h2 {
     line-height: 2 ;
-    font-family: "Raleway-Regular", sans-serif;
+    font-family: "Raleway", sans-serif;
     background-color: #dbc2a4 ;
     border-left: 7px solid #782221;
 }
